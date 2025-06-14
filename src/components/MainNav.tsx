@@ -26,7 +26,7 @@ export default function MainNav() {
             {/* Recettes */}
             <NavigationMenuItem>
               <NavigationMenuTrigger>Recettes</NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="md:left-1/2 md:-translate-x-1/2 md:right-auto">
                 <div className="min-w-[220px] p-2">
                   <div className="font-semibold text-xs text-gray-400 px-2 mb-2">Par pays/cuisine :</div>
                   <ul>
@@ -155,15 +155,11 @@ export default function MainNav() {
               </NavigationMenuLink>
             </NavigationMenuItem>
 
-            {/* Boutique */}
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link to="/boutique" className="px-4 py-2 text-sm font-semibold hover:text-primary">Boutique</Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
+            {/* Boutique supprimée */}
           </NavigationMenuList>
         </NavigationMenu>
       </div>
     </nav>
   );
 }
+
