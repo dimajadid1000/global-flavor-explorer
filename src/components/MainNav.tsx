@@ -35,11 +35,7 @@ export default function MainNav() {
                         <Link to="/recettes/france" className="block px-3 py-1 hover:bg-accent rounded">France</Link>
                       </NavigationMenuLink>
                     </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link to="/recettes/maroc" className="block px-3 py-1 hover:bg-accent rounded">Maroc</Link>
-                      </NavigationMenuLink>
-                    </li>
+                    {/* Maroc supprimé */}
                     <li>
                       <NavigationMenuLink asChild>
                         <Link to="/recettes/italie" className="block px-3 py-1 hover:bg-accent rounded">Italie</Link>
@@ -56,35 +52,7 @@ export default function MainNav() {
                       </NavigationMenuLink>
                     </li>
                   </ul>
-                  {/* Sous-menu exemples */}
-                  <div className="mt-3 text-xs text-gray-500 px-2">Sous-menus :</div>
-                  <ul>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link to="/recettes/petit-dejeuner" className="block px-3 py-1 hover:bg-muted rounded">Petit-déjeuner</Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link to="/recettes/dejeuners-diners" className="block px-3 py-1 hover:bg-muted rounded">Déjeuners & Dîners</Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link to="/recettes/desserts" className="block px-3 py-1 hover:bg-muted rounded">Desserts</Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link to="/recettes/boissons" className="block px-3 py-1 hover:bg-muted rounded">Boissons</Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link to="/recettes/vegetarien" className="block px-3 py-1 hover:bg-muted rounded">Végétarien / Vegan</Link>
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
+                  {/* Sous-menus supprimés */}
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -162,4 +130,3 @@ export default function MainNav() {
     </nav>
   );
 }
-
