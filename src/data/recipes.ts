@@ -53,7 +53,7 @@ export const recipes: Recipe[] = [
       "Salt"
     ],
     steps: [
-      "Nghelliw pasta until al dente.",
+      "Nsekhnou pasta until al dente.",
       "Fry pancetta until crispy.",
       "Whisk eggs and parmesan.",
       "Combine drained spaghetti, pancetta, and egg mixture quickly.",
