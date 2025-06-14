@@ -24,7 +24,7 @@ export default function FilterBar({
   const isArabic = language === "ar";
 
   return (
-    <div className="flex flex-wrap items-center gap-4 mb-8 justify-between w-full">
+    <div className="flex flex-wrap items-center gap-4 mb-8 w-full justify-center">
       <input
         type="text"
         value={value}
