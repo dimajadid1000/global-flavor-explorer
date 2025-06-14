@@ -1,4 +1,3 @@
-
 export type Cuisine =
   | "Italian"
   | "French"
@@ -125,4 +124,40 @@ export const recipes: Recipe[] = [
   // ... 30 more recipes from different countries/cuisines for demo purposes.
   // For brevity, imagine a realistic selection here (Japanese sushi, American burger, Greek moussaka, etc.)
   // More recipes can be easily imported or extended in this array by user later.
+  {
+    id: "couscous",
+    name: "Couscous",
+    cuisine: "Moroccan",
+    country: "Morocco",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80",
+    description: "Un plat marocain traditionnel à base de semoule, légumes variés et viande mijotée, parfait pour les grands repas de famille.",
+    ingredients: [
+      "500g de semoule de couscous",
+      "500g d’agneau (ou de poulet)",
+      "4 carottes",
+      "3 courgettes",
+      "2 navets",
+      "1 oignon",
+      "400g de pois chiches",
+      "1 poignée de raisins secs",
+      "1 c.à.s. de concentré de tomate",
+      "1 c.à.c. de cumin",
+      "1 c.à.c. de cannelle",
+      "1 c.à.c. de paprika",
+      "Sel et poivre",
+      "Huile d’olive"
+    ],
+    steps: [
+      "Faire revenir la viande et l’oignon émincé dans un grand faitout avec un peu d’huile.",
+      "Ajouter les épices, le sel et le concentré de tomate. Bien mélanger.",
+      "Couvrir d’eau, puis ajouter pois chiches et carottes en morceaux. Faire mijoter 40 min.",
+      "Ajouter les navets, courgettes, raisins secs et poursuivre la cuisson 20 min.",
+      "Préparer la semoule selon les indications du paquet. L'égrainer avec un peu d’huile d’olive.",
+      "Servir la viande et légumes sur la semoule, arroser de bouillon."
+    ],
+    tags: ["Traditionnel", "Familial", "Légumes"],
+    prepTime: "30 min",
+    cookTime: "1 h 20",
+    servings: 6,
+  },
 ];

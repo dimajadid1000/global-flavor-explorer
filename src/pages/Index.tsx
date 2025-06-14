@@ -1,8 +1,6 @@
-
 import React, { useState, useMemo } from "react";
 import { recipes, Recipe, Cuisine } from "../data/recipes";
 import RecipeCard from "../components/RecipeCard";
-import RecipeModal from "../components/RecipeModal";
 import FilterBar from "../components/FilterBar";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -12,7 +10,6 @@ const ALL_CUISINES = Array.from(new Set(recipes.map(r => r.cuisine))) as Cuisine
 export default function Index() {
   const [search, setSearch] = useState("");
   const [cuisineFilter, setCuisineFilter] = useState("");
-  const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
   const { t, language } = useLanguage();
 
   const filteredRecipes = useMemo(() => {
@@ -61,21 +58,12 @@ export default function Index() {
               <RecipeCard
                 key={recipe.id}
                 recipe={recipe}
-                onClick={setSelectedRecipe}
               />
             ))
           ) : (
             <div className="col-span-full py-12 text-center text-gray-400 text-xl">{t("noRecipes")}</div>
           )}
         </div>
-        {/* MODAL */}
-        {selectedRecipe && (
-          <RecipeModal
-            recipe={selectedRecipe}
-            open={!!selectedRecipe}
-            onClose={() => setSelectedRecipe(null)}
-          />
-        )}
       </main>
       <footer className="mt-12 mb-3 w-full text-center text-gray-400 text-sm">
         &copy; {new Date().getFullYear()} World Cuisine. {t("footer")}
