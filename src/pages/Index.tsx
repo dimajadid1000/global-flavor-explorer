@@ -4,6 +4,8 @@ import { recipes, Recipe, Cuisine } from "../data/recipes";
 import RecipeCard from "../components/RecipeCard";
 import RecipeModal from "../components/RecipeModal";
 import FilterBar from "../components/FilterBar";
+import LanguageSwitcher from "../components/LanguageSwitcher";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const ALL_CUISINES = Array.from(new Set(recipes.map(r => r.cuisine))) as Cuisine[];
 
@@ -11,6 +13,7 @@ export default function Index() {
   const [search, setSearch] = useState("");
   const [cuisineFilter, setCuisineFilter] = useState("");
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
+  const { t, language } = useLanguage();
 
   const filteredRecipes = useMemo(() => {
     let list = recipes;
@@ -27,12 +30,18 @@ export default function Index() {
     return list;
   }, [search, cuisineFilter]);
 
+  // For Arabic, flip app direction
+  const isArabic = language === "ar";
+
   return (
-    <div className="min-h-screen w-full bg-background flex flex-col">
+    <div className={`min-h-screen w-full bg-background flex flex-col ${isArabic ? "font-arabic" : ""}`} dir={isArabic ? "rtl" : "ltr"}>
       <header className="w-full max-w-7xl mx-auto py-8 mb-6 px-4 flex flex-col items-center gap-2">
-        <h1 className="text-4xl font-bold leading-tight mb-1">World Cuisine Recipe Explorer</h1>
-        <p className="text-lg text-muted-foreground mb-2">
-          <span className="font-medium">Discover, search, and try top recipes from more than 20 famous cuisines around the globe!</span>
+        <div className="w-full flex justify-end pb-2">
+          <LanguageSwitcher />
+        </div>
+        <h1 className="text-4xl font-bold leading-tight mb-1 text-center">{t("siteTitle")}</h1>
+        <p className="text-lg text-muted-foreground mb-2 text-center">
+          <span className="font-medium">{t("subtitle")}</span>
         </p>
       </header>
       <main className="w-full max-w-7xl mx-auto px-4 flex-1">
@@ -56,7 +65,7 @@ export default function Index() {
               />
             ))
           ) : (
-            <div className="col-span-full py-12 text-center text-gray-400 text-xl">No recipes found...</div>
+            <div className="col-span-full py-12 text-center text-gray-400 text-xl">{t("noRecipes")}</div>
           )}
         </div>
         {/* MODAL */}
@@ -69,7 +78,7 @@ export default function Index() {
         )}
       </main>
       <footer className="mt-12 mb-3 w-full text-center text-gray-400 text-sm">
-        &copy; {new Date().getFullYear()} World Cuisine. Global recipes for everyone.
+        &copy; {new Date().getFullYear()} World Cuisine. {t("footer")}
       </footer>
     </div>
   );
