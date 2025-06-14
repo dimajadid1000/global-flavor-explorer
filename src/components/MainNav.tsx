@@ -13,7 +13,17 @@ import {
 export default function MainNav() {
   return (
     <nav className="w-full bg-white shadow sticky top-0 z-30">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 flex items-center">
+        {/* Logo à gauche */}
+        <Link to="/" className="mr-6 flex items-center group" aria-label="Accueil">
+          <img
+            src="/lovable-uploads/4306d701-cc79-4903-8214-b171651fed22.png"
+            alt="Cuisine Astuce Logo"
+            className="h-12 w-auto transition-transform duration-200 group-hover:scale-105"
+            style={{ maxHeight: 48 }}
+          />
+        </Link>
+        {/* Barre de menu */}
         <NavigationMenu>
           <NavigationMenuList>
             {/* Accueil */}
@@ -26,7 +36,7 @@ export default function MainNav() {
             {/* Recettes */}
             <NavigationMenuItem>
               <NavigationMenuTrigger>Recettes</NavigationMenuTrigger>
-              <NavigationMenuContent className="md:left-1/2 md:-translate-x-1/2 md:right-auto">
+              <NavigationMenuContent className="md:left-auto md:right-auto">
                 <div className="min-w-[220px] p-2">
                   <div className="font-semibold text-xs text-gray-400 px-2 mb-2">Par pays/cuisine :</div>
                   <ul>
@@ -122,8 +132,6 @@ export default function MainNav() {
                 <Link to="/contact" className="px-4 py-2 text-sm font-semibold hover:text-primary">Contact</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
-
-            {/* Boutique supprimée */}
           </NavigationMenuList>
         </NavigationMenu>
       </div>
