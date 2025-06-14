@@ -2,7 +2,6 @@ import React, { useState, useMemo } from "react";
 import { recipes, Recipe, Cuisine } from "../data/recipes";
 import RecipeCard from "../components/RecipeCard";
 import FilterBar from "../components/FilterBar";
-import LanguageSwitcher from "../components/LanguageSwitcher";
 import { useLanguage } from "../contexts/LanguageContext";
 import { Link, useNavigate } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
@@ -78,13 +77,7 @@ export default function Index() {
   return (
     <div className={`min-h-screen w-full bg-background flex flex-col ${isArabic ? "font-arabic" : ""}`} dir={isArabic ? "rtl" : "ltr"}>
       <header className="w-full max-w-7xl mx-auto py-6 mb-2 px-4 flex flex-col items-center gap-2">
-        <div className="w-full flex justify-end pb-2">
-          <LanguageSwitcher />
-        </div>
-        <h1 className="text-4xl font-bold leading-tight mb-1 text-center">{t("siteTitle")}</h1>
-        <p className="text-lg text-muted-foreground mb-2 text-center">
-          <span className="font-medium">{t("subtitle")}</span>
-        </p>
+        
       </header>
       {/* Section d’intro + filtres rapides + mise en avant */}
       <section className="w-full bg-white/80 shadow rounded-lg mb-8 px-4 py-6 mx-auto max-w-5xl animate-fade-in flex flex-col gap-5">
