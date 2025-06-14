@@ -77,14 +77,14 @@ export default function Index() {
   return (
     <div className={`min-h-screen w-full bg-background flex flex-col ${isArabic ? "font-arabic" : ""}`} dir={isArabic ? "rtl" : "ltr"}>
       <header className="w-full max-w-7xl mx-auto py-6 mb-2 px-4 flex flex-col items-center gap-2">
-        
+        {/* header intentionally kept empty (as user requested earlier) */}
       </header>
-      {/* Section d’intro + filtres rapides + mise en avant */}
-      <section className="w-full bg-white/80 shadow rounded-lg mb-8 px-4 py-6 mx-auto max-w-5xl animate-fade-in flex flex-col gap-5">
+      {/* Section d’intro + filtres rapides */}
+      <section className="w-full bg-white/80 dark:bg-sidebar shadow rounded-lg mb-8 px-4 py-6 mx-auto max-w-5xl animate-fade-in flex flex-col gap-5">
         {/* Bloc texte intro */}
         <div className="text-center space-y-1">
           <h2 className="text-2xl font-bold text-primary mb-1">Bienvenue sur <span className="text-secondary-foreground italic">Cuisine avec Astuce</span> !</h2>
-          <div className="text-base sm:text-lg text-gray-700">
+          <div className="text-base sm:text-lg text-gray-700 dark:text-gray-200">
             Ici, on cuisine avec le cœur et de bonnes idées.<br />
             Découvrez des <span className="font-semibold text-primary">recettes faciles</span>, des <span className="font-semibold text-primary">astuces pratiques</span> et un <span className="font-semibold text-primary">tour du monde des saveurs</span> !
           </div>
@@ -119,31 +119,7 @@ export default function Index() {
             </Button>
           )}
         </nav>
-        {/* Bloc mise en avant recette */}
-        <div className="w-full max-w-2xl mx-auto bg-accent/60 rounded-lg flex flex-col sm:flex-row items-center gap-4 justify-between px-4 py-4">
-          <div className="flex items-center gap-3">
-            <Star className="text-yellow-500" size={28} />
-            <div>
-              <div className="font-semibold text-base sm:text-lg text-primary-foreground">Recette à essayer aujourd’hui :</div>
-              <div className="font-bold text-xl sm:text-2xl line-clamp-1">
-                {featured?.name || FEATURED_RECIPE.name} <span role="img" aria-label="citron">🍋</span>
-              </div>
-            </div>
-          </div>
-          <Button
-            variant="secondary"
-            size="sm"
-            className="flex gap-1 items-center"
-            onClick={() => {
-              if (featured) {
-                navigate(`/recipes/${featured.id}`);
-              }
-              // Si la recette n'existe pas, rien ne se passe (ou vous pouvez remplacer par FEATURED_RECIPE_ID si elle est ajoutée)
-            }}
-          >
-            Cliquez ici pour la découvrir <ArrowRight className="ml-1" size={18} />
-          </Button>
-        </div>
+        {/* Recette mise en avant: SUPPRIMÉE */}
       </section>
       {/* Filtres classiques */}
       <main className="w-full max-w-7xl mx-auto px-4 flex-1">

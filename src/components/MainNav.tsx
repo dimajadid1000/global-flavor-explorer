@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import {
@@ -9,10 +8,11 @@ import {
   NavigationMenuContent,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function MainNav() {
   return (
-    <nav className="w-full bg-white shadow sticky top-0 z-30">
+    <nav className="w-full bg-white dark:bg-background shadow sticky top-0 z-30">
       <div className="max-w-7xl mx-auto px-4 flex items-center">
         {/* Logo à gauche */}
         <Link to="/" className="mr-6 flex items-center group" aria-label="Accueil">
@@ -134,6 +134,10 @@ export default function MainNav() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
+        {/* Theme toggle at the far right */}
+        <div className="ml-auto flex items-center">
+          <ThemeSwitcher />
+        </div>
       </div>
     </nav>
   );
