@@ -1,24 +1,24 @@
 export type Cuisine =
-  | "Italian"
-  | "French"
-  | "Chinese"
-  | "Japanese"
-  | "Indian"
-  | "Mexican"
-  | "American"
-  | "Thai"
-  | "Spanish"
-  | "Middle Eastern"
-  | "Greek"
-  | "Korean"
-  | "Vietnamese"
-  | "Brazilian"
-  | "Ethiopian"
-  | "Turkish"
-  | "Moroccan"
-  | "Russian"
-  | "German"
-  | "Swedish";
+  | "Italienne"
+  | "Française"
+  | "Chinoise"
+  | "Japonaise"
+  | "Indienne"
+  | "Mexicaine"
+  | "Américaine"
+  | "Thaïlandaise"
+  | "Espagnole"
+  | "Moyen-Orientale"
+  | "Grecque"
+  | "Coréenne"
+  | "Vietnamienne"
+  | "Brésilienne"
+  | "Éthiopienne"
+  | "Turque"
+  | "Marocaine"
+  | "Russe"
+  | "Allemande"
+  | "Suédoise";
 
 export interface Recipe {
   id: string;
@@ -39,7 +39,7 @@ export const recipes: Recipe[] = [
   {
     id: "spaghetti-carbonara",
     name: "Spaghetti à la Carbonara",
-    cuisine: "Italian",
+    cuisine: "Italienne",
     country: "Italy",
     image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80",
     description: "Un plat de pâtes romain classique avec de la pancetta, des œufs, du parmesan et du poivre noir.",
@@ -66,7 +66,7 @@ export const recipes: Recipe[] = [
   {
     id: "beef-bourguignon",
     name: "Bœuf Bourguignon",
-    cuisine: "French",
+    cuisine: "Française",
     country: "France",
     image: "https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=500&q=80",
     description: "Un riche ragoût de bœuf mijoté lentement avec du vin rouge, des champignons et du lard.",
@@ -96,7 +96,7 @@ export const recipes: Recipe[] = [
   {
     id: "kung-pao-chicken",
     name: "Poulet Kung Pao",
-    cuisine: "Chinese",
+    cuisine: "Chinoise",
     country: "China",
     image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=500&q=80",
     description: "Un sauté épicé du Sichuan avec du poulet, des cacahuètes et des piments.",
@@ -127,7 +127,7 @@ export const recipes: Recipe[] = [
   {
     id: "couscous",
     name: "Couscous",
-    cuisine: "Moroccan",
+    cuisine: "Marocaine",
     country: "Morocco",
     image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80",
     description: "Un plat marocain traditionnel à base de semoule, légumes variés et viande mijotée, parfait pour les grands repas de famille.",

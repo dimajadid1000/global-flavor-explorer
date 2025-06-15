@@ -10,13 +10,13 @@ import { Star, ArrowRight } from "lucide-react";
 
 // Catégories rapides des filtres
 const QUICK_FILTERS = [
-  { label: "Français", type: "cuisine", value: "French" },
-  { label: "Italien", type: "cuisine", value: "Italian" },
-  { label: "Marocain", type: "cuisine", value: "Moroccan" },
-  { label: "Indien", type: "cuisine", value: "Indian" },
+  { label: "Française", type: "cuisine", value: "Française" },
+  { label: "Italienne", type: "cuisine", value: "Italienne" },
+  { label: "Marocaine", type: "cuisine", value: "Marocaine" },
+  { label: "Indienne", type: "cuisine", value: "Indienne" },
   { label: "Végétarien", type: "tag", value: "Végétarien" },
   { label: "Desserts", type: "tag", value: "Desserts" },
-  { label: "Rapide", type: "tag", value: "Quick" },
+  { label: "Rapide", type: "tag", value: "Rapide" },
   { label: "Économique", type: "tag", value: "Économique" },
 ];
 
