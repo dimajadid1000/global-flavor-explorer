@@ -1,20 +1,25 @@
 
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDZwAI2w0ZmJJyYAdZcKDLt_YPJZqirPeA",
-  authDomain: "dimajqdid-47e37.firebaseapp.com",
-  projectId: "dimajqdid-47e37",
-  storageBucket: "dimajqdid-47e37.firebaseapp.com",
-  messagingSenderId: "815748050639",
-  appId: "1:815748050639:web:6bf70f3cbaa84e6d6111ba",
-  measurementId: "G-Y17D1GFPDZ",
+  // Remplacez ces valeurs par votre configuration Firebase
+  apiKey: "votre-api-key",
+  authDomain: "votre-projet.firebaseapp.com",
+  projectId: "votre-projet-id",
+  storageBucket: "votre-projet.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "votre-app-id"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
-export { app, analytics };
+// Initialize Firebase Authentication and get a reference to the service
+export const auth = getAuth(app);
+
+// Initialize Cloud Firestore and get a reference to the service
+export const db = getFirestore(app);
+
+export default app;
