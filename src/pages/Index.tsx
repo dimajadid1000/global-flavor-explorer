@@ -289,11 +289,6 @@ export default function Index() {
           <p className="text-lg text-gray-600 dark:text-gray-300">
             Découvrez toutes nos recettes et créations culinaires
           </p>
-          <div className="mt-4">
-            <Badge variant="secondary" className="text-sm">
-              {ALL_ARTICLES.length} articles disponibles
-            </Badge>
-          </div>
         </div>
         
         <Carousel
