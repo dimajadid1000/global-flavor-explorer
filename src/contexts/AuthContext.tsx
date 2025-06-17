@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { 
   User, 
@@ -10,8 +9,7 @@ import { auth } from '@/lib/firebase';
 
 interface AuthContextType {
   currentUser: User | null;
-  login: (email: thecrazydriver1995@gmail.com
-, password: hamza@@123) => Promise<void>;
+  login: (email: string, password: string) => Promise<void>;
   logout: () => Promise<void>;
   loading: boolean;
 }
