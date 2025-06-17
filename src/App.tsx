@@ -51,11 +51,6 @@ import TofuSoyeuxTomatesBasilic from "./pages/articles/TofuSoyeuxTomatesBasilic"
 import LimonadeRhubarbe from "./pages/articles/LimonadeRhubarbe";
 import BoissonPechesGingembre from "./pages/articles/BoissonPechesGingembre";
 
-import { AuthProvider } from "./contexts/AuthContext";
-import ProtectedRoute from "./components/ProtectedRoute";
-import AdminLogin from "./pages/AdminLogin";
-import Admin from "./pages/Admin";
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -64,75 +59,65 @@ const App = () => (
       <Toaster />
       <Sonner />
       <LanguageProvider>
-        <AuthProvider>
-          <BrowserRouter>
-            {/* NAVIGATION BAR */}
-            <MainNav />
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/home" element={<Home />} />
-              <Route path="/recettes" element={<Recettes />} />
-              <Route path="/recettes/:cuisine" element={<Recettes />} />
-              <Route path="/recettes/petit-dejeuner" element={<Recettes />} />
-              <Route path="/recettes/dejeuners-diners" element={<Recettes />} />
-              <Route path="/recettes/desserts" element={<Recettes />} />
-              <Route path="/recettes/boissons" element={<Recettes />} />
-              <Route path="/recettes/vegetarien" element={<Recettes />} />
-              <Route path="/astuces" element={<AstucesCuisine />} />
-              <Route path="/astuces/:section" element={<AstucesCuisine />} />
-              <Route path="/guides" element={<GuidesPratiques />} />
-              <Route path="/ingredients" element={<Ingredients101 />} />
-              <Route path="/plans-repas" element={<PlansDeRepas />} />
-              <Route path="/a-propos" element={<APropos />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/boutique" element={<Boutique />} />
-              <Route path="/recipes/:recipeId" element={<RecipePage />} />
-              
-              {/* Routes pour les articles existants */}
-              <Route path="/articles/lasagnes-courgettes" element={<LasagnesCourgettes />} />
-              <Route path="/articles/salade-grecque" element={<SaladeGrecque />} />
-              <Route path="/articles/galettes-vegetariennes" element={<GalettesVegetariennes />} />
-              <Route path="/articles/parmigiana-aubergines" element={<ParmigianaAubergines />} />
-              <Route path="/articles/caponata-aubergines" element={<CaponataAubergines />} />
-              <Route path="/articles/rillettes-radis" element={<RillettesRadis />} />
-              <Route path="/articles/gaspacho-courgettes-curcuma" element={<GaspachoCourgettesCurcuma />} />
-              <Route path="/articles/salade-pommes-de-terre" element={<SaladePommesDeTerre />} />
-              <Route path="/articles/oeufs-mollets" element={<OeufsMollets />} />
-              <Route path="/articles/sundae-maison" element={<SundaeMaison />} />
-              
-              {/* Routes pour les nouveaux articles */}
-              <Route path="/articles/salade-pates-bruschetta" element={<SaladePatesBruschetta />} />
-              <Route path="/articles/guedilles-crabe" element={<GuedillesCrabe />} />
-              <Route path="/articles/salade-antipasto" element={<SaladeAntipasto />} />
-              <Route path="/articles/salade-nicoise" element={<SaladeNicoise />} />
-              <Route path="/articles/salade-melon-epicee" element={<SaladeMelonEpicee />} />
-              <Route path="/articles/tartines-tomates-prosciutto" element={<TartinesTomatesProsciutto />} />
-              <Route path="/articles/sandwich-banh-mi" element={<SandwichBanhMi />} />
-              <Route path="/articles/ramen-froid" element={<RamenFroid />} />
-              <Route path="/articles/bar-tacos-express" element={<BarTacosExpress />} />
-              <Route path="/articles/salade-fattouche-vege" element={<SaladeFattoucheVege />} />
-              <Route path="/articles/salade-concombres-ecrases" element={<SaladeConcombresEcrases />} />
-              <Route path="/articles/guedilles-vegetaliennes" element={<GuedillesVegetaliennes />} />
-              <Route path="/articles/salade-roquette-avocat-bleuets" element={<SaladeRoquetteAvocatBleuets />} />
-              <Route path="/articles/sandwich-arc-en-ciel-tofu" element={<SandwichArcEnCielTofu />} />
-              <Route path="/articles/sandwich-muffuletta" element={<SandwichMuffuletta />} />
-              <Route path="/articles/tofu-soyeux-tomates-basilic" element={<TofuSoyeuxTomatesBasilic />} />
-              <Route path="/articles/limonade-rhubarbe" element={<LimonadeRhubarbe />} />
-              <Route path="/articles/boisson-peches-gingembre" element={<BoissonPechesGingembre />} />
-              
-              {/* Routes d'administration */}
-              <Route path="/admin/login" element={<AdminLogin />} />
-              <Route path="/admin" element={
-                <ProtectedRoute>
-                  <Admin />
-                </ProtectedRoute>
-              } />
-              
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </AuthProvider>
+        <BrowserRouter>
+          {/* NAVIGATION BAR */}
+          <MainNav />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/recettes" element={<Recettes />} />
+            <Route path="/recettes/:cuisine" element={<Recettes />} />
+            <Route path="/recettes/petit-dejeuner" element={<Recettes />} />
+            <Route path="/recettes/dejeuners-diners" element={<Recettes />} />
+            <Route path="/recettes/desserts" element={<Recettes />} />
+            <Route path="/recettes/boissons" element={<Recettes />} />
+            <Route path="/recettes/vegetarien" element={<Recettes />} />
+            <Route path="/astuces" element={<AstucesCuisine />} />
+            <Route path="/astuces/:section" element={<AstucesCuisine />} />
+            <Route path="/guides" element={<GuidesPratiques />} />
+            <Route path="/ingredients" element={<Ingredients101 />} />
+            <Route path="/plans-repas" element={<PlansDeRepas />} />
+            <Route path="/a-propos" element={<APropos />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/boutique" element={<Boutique />} />
+            <Route path="/recipes/:recipeId" element={<RecipePage />} />
+            
+            {/* Routes pour les articles existants */}
+            <Route path="/articles/lasagnes-courgettes" element={<LasagnesCourgettes />} />
+            <Route path="/articles/salade-grecque" element={<SaladeGrecque />} />
+            <Route path="/articles/galettes-vegetariennes" element={<GalettesVegetariennes />} />
+            <Route path="/articles/parmigiana-aubergines" element={<ParmigianaAubergines />} />
+            <Route path="/articles/caponata-aubergines" element={<CaponataAubergines />} />
+            <Route path="/articles/rillettes-radis" element={<RillettesRadis />} />
+            <Route path="/articles/gaspacho-courgettes-curcuma" element={<GaspachoCourgettesCurcuma />} />
+            <Route path="/articles/salade-pommes-de-terre" element={<SaladePommesDeTerre />} />
+            <Route path="/articles/oeufs-mollets" element={<OeufsMollets />} />
+            <Route path="/articles/sundae-maison" element={<SundaeMaison />} />
+            
+            {/* Routes pour les nouveaux articles */}
+            <Route path="/articles/salade-pates-bruschetta" element={<SaladePatesBruschetta />} />
+            <Route path="/articles/guedilles-crabe" element={<GuedillesCrabe />} />
+            <Route path="/articles/salade-antipasto" element={<SaladeAntipasto />} />
+            <Route path="/articles/salade-nicoise" element={<SaladeNicoise />} />
+            <Route path="/articles/salade-melon-epicee" element={<SaladeMelonEpicee />} />
+            <Route path="/articles/tartines-tomates-prosciutto" element={<TartinesTomatesProsciutto />} />
+            <Route path="/articles/sandwich-banh-mi" element={<SandwichBanhMi />} />
+            <Route path="/articles/ramen-froid" element={<RamenFroid />} />
+            <Route path="/articles/bar-tacos-express" element={<BarTacosExpress />} />
+            <Route path="/articles/salade-fattouche-vege" element={<SaladeFattoucheVege />} />
+            <Route path="/articles/salade-concombres-ecrases" element={<SaladeConcombresEcrases />} />
+            <Route path="/articles/guedilles-vegetaliennes" element={<GuedillesVegetaliennes />} />
+            <Route path="/articles/salade-roquette-avocat-bleuets" element={<SaladeRoquetteAvocatBleuets />} />
+            <Route path="/articles/sandwich-arc-en-ciel-tofu" element={<SandwichArcEnCielTofu />} />
+            <Route path="/articles/sandwich-muffuletta" element={<SandwichMuffuletta />} />
+            <Route path="/articles/tofu-soyeux-tomates-basilic" element={<TofuSoyeuxTomatesBasilic />} />
+            <Route path="/articles/limonade-rhubarbe" element={<LimonadeRhubarbe />} />
+            <Route path="/articles/boisson-peches-gingembre" element={<BoissonPechesGingembre />} />
+            
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
       </LanguageProvider>
     </TooltipProvider>
   </QueryClientProvider>

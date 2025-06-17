@@ -4,10 +4,10 @@ import { recipes, Recipe, Cuisine } from "../data/recipes";
 import RecipeCard from "../components/RecipeCard";
 import FilterBar from "../components/FilterBar";
 import { useLanguage } from "../contexts/LanguageContext";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Star, ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight, BookOpen } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -15,37 +15,16 @@ import Autoplay from "embla-carousel-autoplay";
 const QUICK_FILTERS = [
   { label: "Française", type: "cuisine", value: "Française" },
   { label: "Italienne", type: "cuisine", value: "Italienne" },
-  { label: "Marocaine", type: "cuisine", value: "Marocaine" },
   { label: "Indienne", type: "cuisine", value: "Indienne" },
+  { label: "Asiatique", type: "cuisine", value: "Asiatique" },
   { label: "Végétarien", type: "tag", value: "Végétarien" },
   { label: "Desserts", type: "tag", value: "Desserts" },
   { label: "Rapide", type: "tag", value: "Rapide" },
   { label: "Économique", type: "tag", value: "Économique" },
 ];
 
-// Tous les articles (existants + nouveaux)
+// Tous les articles avec les bonnes images et liens
 const ALL_ARTICLES = [
-  {
-    title: "Lasagnes aux Courgettes et Feta",
-    description: "Une version estivale et légère des lasagnes traditionnelles",
-    image: "/lovable-uploads/8d6ad858-5b8c-4165-b345-bece66e7d9a8.png",
-    link: "/articles/lasagnes-courgettes",
-    time: "45 min"
-  },
-  {
-    title: "Salade Grecque en Cubes",
-    description: "Beau comme un tableau ! Une présentation originale de la salade grecque",
-    image: "/lovable-uploads/9e7dd654-2b37-4e56-97ec-baebde0664f6.png",
-    link: "/articles/salade-grecque",
-    time: "15 min"
-  },
-  {
-    title: "Galettes Végétariennes",
-    description: "Un plat d'été 100% barbecue aux pois chiches et légumes grillés",
-    image: "/lovable-uploads/7b92cadc-9e75-419c-a907-ea4109852971.png",
-    link: "/articles/galettes-vegetariennes",
-    time: "50 min"
-  },
   {
     title: "Salade de pâtes à la bruschetta",
     description: "Une salade-repas à 5 ingrédients, simple et savoureuse",
@@ -171,6 +150,27 @@ const ALL_ARTICLES = [
     image: "/lovable-uploads/5113a2f2-d43d-40c0-a73a-13c1d73abb48.png",
     link: "/articles/boisson-peches-gingembre",
     time: "30 min"
+  },
+  {
+    title: "Lasagnes aux Courgettes et Feta",
+    description: "Une version estivale et légère des lasagnes traditionnelles",
+    image: "/lovable-uploads/8d6ad858-5b8c-4165-b345-bece66e7d9a8.png",
+    link: "/articles/lasagnes-courgettes",
+    time: "45 min"
+  },
+  {
+    title: "Salade Grecque en Cubes",
+    description: "Beau comme un tableau ! Une présentation originale de la salade grecque",
+    image: "/lovable-uploads/9e7dd654-2b37-4e56-97ec-baebde0664f6.png",
+    link: "/articles/salade-grecque",
+    time: "15 min"
+  },
+  {
+    title: "Galettes Végétariennes",
+    description: "Un plat d'été 100% barbecue aux pois chiches et légumes grillés",
+    image: "/lovable-uploads/7b92cadc-9e75-419c-a907-ea4109852971.png",
+    link: "/articles/galettes-vegetariennes",
+    time: "50 min"
   }
 ];
 
@@ -181,7 +181,6 @@ export default function Index() {
   const [cuisineFilter, setCuisineFilter] = useState("");
   const [quickFilter, setQuickFilter] = useState<{ type: string; value: string } | null>(null);
   const { t, language } = useLanguage();
-  const navigate = useNavigate();
 
   // Gestion des filtres avec quickFilter
   const filteredRecipes = useMemo(() => {
@@ -221,7 +220,7 @@ export default function Index() {
       <section className="w-full bg-white/80 dark:bg-sidebar shadow rounded-lg mb-8 px-4 py-6 mx-auto max-w-5xl animate-fade-in flex flex-col gap-5">
         {/* Bloc texte intro */}
         <div className="text-center space-y-1">
-          <h2 className="text-2xl font-bold text-primary mb-1">Bienvenue sur <span className="text-secondary-foreground italic">Cuisine avec Astuce</span> !</h2>
+          <h2 className="text-2xl font-bold text-primary mb-1">Bienvenue sur <span className="text-secondary-foreground italic">Cuisine et Astuce</span> !</h2>
           <div className="text-base sm:text-lg text-gray-700 dark:text-gray-200">
             Ici, on cuisine avec le cœur et de bonnes idées.<br />
             Découvrez des <span className="font-semibold text-primary">recettes faciles</span>, des <span className="font-semibold text-primary">astuces pratiques</span> et un <span className="font-semibold text-primary">tour du monde des saveurs</span> !
@@ -359,7 +358,7 @@ export default function Index() {
         </div>
       </main>
       <footer className="mt-12 mb-3 w-full text-center text-gray-400 text-sm">
-        &copy; {new Date().getFullYear()} World Cuisine. {t("footer")}
+        &copy; {new Date().getFullYear()} Cuisine et Astuce. {t("footer")}
       </footer>
     </div>
   );
