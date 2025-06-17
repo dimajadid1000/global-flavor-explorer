@@ -1,10 +1,11 @@
+
 import React from "react";
 import { Recipe } from "../data/recipes";
 import { ChefHat } from "lucide-react";
-import { Link } from "react-router-dom";
 
 type Props = {
   recipe: Recipe;
+  onClick: (r: Recipe) => void;
 };
 
 const cuisineColors: Record<string, string> = {
@@ -30,11 +31,11 @@ const cuisineColors: Record<string, string> = {
   Swedish: "bg-sky-100 text-sky-700",
 };
 
-export default function RecipeCard({ recipe }: Props) {
+export default function RecipeCard({ recipe, onClick }: Props) {
   return (
-    <Link
-      to={`/recipes/${recipe.id}`}
+    <button
       className="relative rounded-xl bg-white shadow-md hover:shadow-xl transition-shadow duration-200 cursor-pointer overflow-hidden flex flex-col items-stretch hover-scale"
+      onClick={() => onClick(recipe)}
       aria-label={`Open details for ${recipe.name}`}
     >
       <img
@@ -67,6 +68,6 @@ export default function RecipeCard({ recipe }: Props) {
           ))}
         </div>
       </div>
-    </Link>
+    </button>
   );
 }
