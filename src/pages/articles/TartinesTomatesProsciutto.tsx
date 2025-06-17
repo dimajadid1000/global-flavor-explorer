@@ -38,7 +38,7 @@ export default function TartinesTomatesProsciutto() {
 
           <div className="aspect-video overflow-hidden rounded-xl">
             <img 
-              src="/lovable-uploads/3d08a949-701f-4bad-b0b6-52b946fcf28b.png" 
+              src="/lovable-uploads/9f4007ab-4c2c-4ec4-afb1-1af7745d1083.png" 
               alt="Tartines aux tomates et prosciutto"
               className="w-full h-full object-cover"
             />

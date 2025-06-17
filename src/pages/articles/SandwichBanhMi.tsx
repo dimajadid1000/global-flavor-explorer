@@ -18,7 +18,7 @@ export default function SandwichBanhMi() {
           <header className="text-center space-y-4">
             <h1 className="text-4xl font-bold text-primary">Sandwichs bánh mì</h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Des sandwichs vietnamiens authentiques avec poulet effiloché, légumes marinés et sauce épicée.
+              Des sandwichs vietnamiens authentiques avec poulet effiloché et légumes marinés croquants.
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
               <Badge variant="secondary" className="flex items-center gap-1">
@@ -27,7 +27,7 @@ export default function SandwichBanhMi() {
               </Badge>
               <Badge variant="secondary" className="flex items-center gap-1">
                 <Users className="w-4 h-4" />
-                6 portions
+                4 portions
               </Badge>
               <Badge variant="secondary" className="flex items-center gap-1">
                 <ChefHat className="w-4 h-4" />
@@ -38,116 +38,62 @@ export default function SandwichBanhMi() {
 
           <div className="aspect-video overflow-hidden rounded-xl">
             <img 
-              src="/lovable-uploads/6b4fa233-9631-43c4-b999-7b1680a1e024.png" 
+              src="/lovable-uploads/f2b4ea1c-a22e-4650-aae1-205214441288.png" 
               alt="Sandwichs bánh mì"
               className="w-full h-full object-cover"
             />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Poulet effiloché</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  <li>• Gousse d'ail - 1</li>
-                  <li>• Miel - 30 ml (2 c. à soupe)</li>
-                  <li>• Vinaigre de riz - 15 ml (1 c. à soupe)</li>
-                  <li>• Huile de sésame grillé - 5 ml (1 c. à thé)</li>
-                  <li>• Escalopes de poulet - 450 g (1 lb)</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Légumes marinés</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  <li>• Carottes - 2</li>
-                  <li>• Daikon en rubans - 250 ml (1 tasse)</li>
-                  <li>• Vinaigre de riz - 125 ml (½ tasse)</li>
-                  <li>• Eau - 125 ml (½ tasse)</li>
-                  <li>• Sucre - 15 ml (1 c. à soupe)</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Sauce</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  <li>• Yogourt grec nature - 150 ml (⅔ tasse)</li>
-                  <li>• Sauce chili thaï sucrée - 30 ml (2 c. à soupe)</li>
-                  <li>• Sauce piquante sriracha - 5 ml (1 c. à thé)</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Garnitures</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  <li>• Concombres libanais - 2</li>
-                  <li>• Coriandre fraîche - 125 ml (½ tasse)</li>
-                  <li>• Pains à sous-marin de 15 cm - 6</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <ChefHat className="w-5 h-5" />
+                Ingrédients
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2">
+                <li>• Baguettes vietnamiennes - 4</li>
+                <li>• Poitrines de poulet - 500 g</li>
+                <li>• Carottes - 2 moyennes</li>
+                <li>• Radis daikon - 200 g</li>
+                <li>• Concombre - 1</li>
+                <li>• Coriandre fraîche - 1 bouquet</li>
+                <li>• Pâté de foie (optionnel) - 100 g</li>
+                <li>• Mayonnaise - 60 ml</li>
+                <li>• Sauce soja - 30 ml</li>
+                <li>• Vinaigre de riz - 60 ml</li>
+                <li>• Sucre - 30 g</li>
+                <li>• Piments jalapeño - 2</li>
+                <li>• Ail - 2 gousses</li>
+                <li>• Gingembre - 1 morceau de 2 cm</li>
+                <li>• Huile de sésame - 15 ml</li>
+              </ul>
+            </CardContent>
+          </Card>
 
           <Card>
             <CardHeader>
               <CardTitle>Préparation</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-semibold mb-3">Poulet effiloché :</h3>
-                  <ol className="space-y-2">
-                    <li><strong>1.</strong> Préchauffez le four à gril (broil). Tapissez une plaque de papier d'aluminium.</li>
-                    <li><strong>2.</strong> Hachez l'ail et mélangez avec le miel, vinaigre de riz et huile de sésame dans un grand bol.</li>
-                    <li><strong>3.</strong> Enrobez le poulet de marinade et déposez sur la plaque.</li>
-                    <li><strong>4.</strong> Faites cuire au four 10-12 minutes jusqu'à cuisson complète. Laissez tiédir.</li>
-                  </ol>
-                </div>
-                
-                <div>
-                  <h3 className="font-semibold mb-3">Légumes marinés :</h3>
-                  <ol className="space-y-2">
-                    <li><strong>1.</strong> Pelez les carottes en rubans avec un économe dans un grand bol.</li>
-                    <li><strong>2.</strong> Portez à ébullition le vinaigre, l'eau, le sucre et le sel.</li>
-                    <li><strong>3.</strong> Versez sur les légumes et réfrigérez quelques minutes.</li>
-                  </ol>
-                </div>
-                
-                <div>
-                  <h3 className="font-semibold mb-3">Assemblage :</h3>
-                  <ol className="space-y-2">
-                    <li><strong>1.</strong> Mélangez les ingrédients de la sauce.</li>
-                    <li><strong>2.</strong> Tranchez les concombres et hachez la coriandre.</li>
-                    <li><strong>3.</strong> Coupez les pains et répartissez la sauce. Effilochez le poulet et égouttez les légumes.</li>
-                    <li><strong>4.</strong> Garnissez de poulet, légumes marinés, concombres et coriandre. Servez.</li>
-                  </ol>
-                </div>
-              </div>
+              <ol className="space-y-4">
+                <li><strong>1.</strong> Préparez la marinade avec sauce soja, ail et gingembre hachés. Faites mariner le poulet 30 minutes.</li>
+                <li><strong>2.</strong> Râpez finement les carottes et le radis. Mélangez avec vinaigre de riz, sucre et sel. Laissez mariner 20 minutes.</li>
+                <li><strong>3.</strong> Faites cuire le poulet dans une poêle avec un peu d'huile. Effilochez-le une fois cuit et refroidi.</li>
+                <li><strong>4.</strong> Coupez le concombre en bâtonnets fins et émincez les piments.</li>
+                <li><strong>5.</strong> Ouvrez les baguettes en gardant un côté attaché. Tartinez de pâté et mayonnaise.</li>
+                <li><strong>6.</strong> Garnissez avec poulet effiloché, légumes marinés, concombre, piments et coriandre.</li>
+                <li><strong>7.</strong> Servez immédiatement pour conserver le croustillant du pain.</li>
+              </ol>
             </CardContent>
           </Card>
 
           <div className="flex flex-wrap gap-2">
-            <Badge>Lunchs</Badge>
             <Badge>Sandwichs</Badge>
-            <Badge>Vietnamienne</Badge>
-            <Badge>Boîtes à lunch</Badge>
-            <Badge>Pique-nique</Badge>
+            <Badge>Vietnamien</Badge>
+            <Badge>Asiatique</Badge>
+            <Badge>Lunch</Badge>
           </div>
         </article>
       </div>

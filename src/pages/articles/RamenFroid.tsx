@@ -38,7 +38,7 @@ export default function RamenFroid() {
 
           <div className="aspect-video overflow-hidden rounded-xl">
             <img 
-              src="/lovable-uploads/868a4d4c-e1cd-4892-9df9-b5f38f117d80.png" 
+              src="/lovable-uploads/d709aee5-5e67-4d34-8db7-b7a35a77a50c.png" 
               alt="Ramen froid"
               className="w-full h-full object-cover"
             />

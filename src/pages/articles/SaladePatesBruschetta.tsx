@@ -38,7 +38,7 @@ export default function SaladePatesBruschetta() {
 
           <div className="aspect-video overflow-hidden rounded-xl">
             <img 
-              src="/lovable-uploads/8d6ad858-5b8c-4165-b345-bece66e7d9a8.png" 
+              src="/lovable-uploads/c495ffc5-d0d8-4ed5-99b6-18b5bf939508.png" 
               alt="Salade de pâtes à la bruschetta"
               className="w-full h-full object-cover"
             />

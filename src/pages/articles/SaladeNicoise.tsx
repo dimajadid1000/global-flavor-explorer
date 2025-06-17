@@ -38,7 +38,7 @@ export default function SaladeNicoise() {
 
           <div className="aspect-video overflow-hidden rounded-xl">
             <img 
-              src="/lovable-uploads/4f508374-776e-49cd-b5b2-4747ee89831b.png" 
+              src="/lovable-uploads/467fe776-4199-43ae-866f-468ee145f60b.png" 
               alt="Salade niçoise"
               className="w-full h-full object-cover"
             />

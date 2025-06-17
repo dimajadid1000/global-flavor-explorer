@@ -18,7 +18,7 @@ export default function SaladeFattoucheVege() {
           <header className="text-center space-y-4">
             <h1 className="text-4xl font-bold text-primary">Salade fattouche végé</h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Une salade méditerranéenne colorée avec tofu mariné au zaatar et pain pita grillé croustillant.
+              Une salade méditerranéenne fraîche et colorée avec tofu mariné au zaatar et pain pita grillé.
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
               <Badge variant="secondary" className="flex items-center gap-1">
@@ -38,52 +38,39 @@ export default function SaladeFattoucheVege() {
 
           <div className="aspect-video overflow-hidden rounded-xl">
             <img 
-              src="/lovable-uploads/5113a2f2-d43d-40c0-a73a-13c1d73abb48.png" 
+              src="/lovable-uploads/2ec2e95e-06b8-4a00-a983-90683d7f6594.png" 
               alt="Salade fattouche végé"
               className="w-full h-full object-cover"
             />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <ChefHat className="w-5 h-5" />
-                  Ingrédients
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  <li>• Pitas - 2</li>
-                  <li>• Tofu mariné au zaatar - 1 bloc de 350 à 450 g</li>
-                  <li>• Citron - 1</li>
-                  <li>• Huile d'olive - 30 ml (2 c. à soupe)</li>
-                  <li>• Grosse pomme de laitue romaine - 1</li>
-                  <li>• Concombres libanais - 3</li>
-                  <li>• Radis - 4 ou 5</li>
-                  <li>• Tomates cerises - 500 ml (2 tasses)</li>
-                  <li>• Menthe fraîche - 60 ml (¼ tasse)</li>
-                  <li>• Sumac moulu - 5 ml (1 c. à thé)</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Valeurs nutritives (par portion)</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <div>Calories: 393</div>
-                  <div>Protéines: 19 g</div>
-                  <div>Lipides: 24 g</div>
-                  <div>Glucides: 28 g</div>
-                  <div>Fibres: 4 g</div>
-                  <div>Sodium: 249 mg</div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <ChefHat className="w-5 h-5" />
+                Ingrédients
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2">
+                <li>• Tofu ferme - 300 g</li>
+                <li>• Pain pita - 2 pains</li>
+                <li>• Laitue romaine - 1 grosse</li>
+                <li>• Tomates - 3 moyennes</li>
+                <li>• Concombres - 2</li>
+                <li>• Radis - 6</li>
+                <li>• Oignon rouge - 1/2</li>
+                <li>• Persil plat frais - 1 bouquet</li>
+                <li>• Menthe fraîche - 30 g</li>
+                <li>• Sumac - 10 ml</li>
+                <li>• Zaatar - 15 ml</li>
+                <li>• Huile d'olive - 90 ml</li>
+                <li>• Jus de citron - 60 ml</li>
+                <li>• Ail - 2 gousses</li>
+                <li>• Sel et poivre - Au goût</li>
+              </ul>
+            </CardContent>
+          </Card>
 
           <Card>
             <CardHeader>
@@ -91,35 +78,22 @@ export default function SaladeFattoucheVege() {
             </CardHeader>
             <CardContent>
               <ol className="space-y-4">
-                <li><strong>1.</strong> Préchauffez le four à 200 °C (400 °F). Placez la grille au centre.</li>
-                <li><strong>2.</strong> Déposez les pitas directement sur la grille du four et faites-les cuire 8 à 10 minutes jusqu'à ce qu'ils soient dorés et secs. Laissez tiédir et cassez en morceaux.</li>
-                <li><strong>3.</strong> Dans un grand poêlon antiadhésif à feu moyen-vif, sans matière grasse, déposez le tofu mariné et réduisez à feu moyen-doux. Faites cuire 15 à 20 minutes jusqu'à ce qu'il soit doré, en remuant régulièrement.</li>
-                <li><strong>4.</strong> Pressez le citron directement au-dessus d'un saladier. Versez l'huile, poivrez généreusement et ajoutez une pincée de sel. Mélangez.</li>
-                <li><strong>5.</strong> Coupez grossièrement la laitue. Tranchez finement les concombres et les radis. Coupez les tomates cerises en deux.</li>
-                <li><strong>6.</strong> Ajoutez les légumes dans le saladier et mélangez pour bien les enrober de vinaigrette.</li>
-                <li><strong>7.</strong> Hachez grossièrement la menthe. Déposez le tofu grillé sur la salade. Récupérez les graines de sésame du poêlon.</li>
-                <li><strong>8.</strong> Garnissez de menthe, de morceaux de pitas grillés et saupoudrez de sumac. Servez.</li>
+                <li><strong>1.</strong> Coupez le tofu en cubes et marinez-le avec zaatar, huile d'olive, sel et poivre pendant 20 minutes.</li>
+                <li><strong>2.</strong> Grillez le pain pita jusqu'à ce qu'il soit doré et cassant. Cassez-le en morceaux irréguliers.</li>
+                <li><strong>3.</strong> Préparez tous les légumes : coupez la laitue, les tomates en quartiers, les concombres et radis en rondelles.</li>
+                <li><strong>4.</strong> Émincez finement l'oignon rouge, hachez le persil et la menthe.</li>
+                <li><strong>5.</strong> Préparez la vinaigrette avec le jus de citron, l'ail pressé, l'huile d'olive et le sumac.</li>
+                <li><strong>6.</strong> Faites dorer le tofu mariné dans une poêle antiadhésive.</li>
+                <li><strong>7.</strong> Mélangez tous les ingrédients, ajoutez le pain pita au dernier moment et servez immédiatement.</li>
               </ol>
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader>
-              <CardTitle>Notes et astuces</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <p><strong>Pitas secs :</strong> Cette recette est parfaite pour donner une seconde vie à vos pitas qui sont devenus un peu secs.</p>
-                <p><strong>Conservation :</strong> Cette recette est meilleure préparée à la dernière minute.</p>
-              </div>
-            </CardContent>
-          </Card>
-
           <div className="flex flex-wrap gap-2">
-            <Badge>Plats principaux</Badge>
-            <Badge>Salades</Badge>
             <Badge>Végétarien</Badge>
-            <Badge>Méditerranéenne</Badge>
+            <Badge>Méditerranéen</Badge>
+            <Badge>Salade</Badge>
+            <Badge>Santé</Badge>
           </div>
         </article>
       </div>

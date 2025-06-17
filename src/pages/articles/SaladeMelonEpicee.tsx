@@ -38,7 +38,7 @@ export default function SaladeMelonEpicee() {
 
           <div className="aspect-video overflow-hidden rounded-xl">
             <img 
-              src="/lovable-uploads/041d3ac5-0ef7-4973-9e16-921d3802f78d.png" 
+              src="/lovable-uploads/b651c723-9176-4a51-85c9-491327abcaa0.png" 
               alt="Salade de melon d'eau épicée"
               className="w-full h-full object-cover"
             />

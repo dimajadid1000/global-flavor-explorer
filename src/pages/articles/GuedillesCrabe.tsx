@@ -38,7 +38,7 @@ export default function GuedillesCrabe() {
 
           <div className="aspect-video overflow-hidden rounded-xl">
             <img 
-              src="/lovable-uploads/9e7dd654-2b37-4e56-97ec-baebde0664f6.png" 
+              src="/lovable-uploads/68633abb-65c6-4d9b-ae53-c2ccea419908.png" 
               alt="Guédilles au crabe des neiges"
               className="w-full h-full object-cover"
             />
