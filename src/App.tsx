@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,7 +19,7 @@ import Contact from "./pages/Contact";
 import Boutique from "./pages/Boutique";
 import MainNav from "@/components/MainNav";
 
-// Import des articles
+// Import des articles existants
 import LasagnesCourgettes from "./pages/articles/LasagnesCourgettes";
 import SaladeGrecque from "./pages/articles/SaladeGrecque";
 import GalettesVegetariennes from "./pages/articles/GalettesVegetariennes";
@@ -29,6 +30,27 @@ import GaspachoCourgettesCurcuma from "./pages/articles/GaspachoCourgettesCurcum
 import SaladePommesDeTerre from "./pages/articles/SaladePommesDeTerre";
 import OeufsMollets from "./pages/articles/OeufsMollets";
 import SundaeMaison from "./pages/articles/SundaeMaison";
+
+// Import des nouveaux articles
+import SaladePatesBruschetta from "./pages/articles/SaladePatesBruschetta";
+import GuedillesCrabe from "./pages/articles/GuedillesCrabe";
+import SaladeAntipasto from "./pages/articles/SaladeAntipasto";
+import SaladeNicoise from "./pages/articles/SaladeNicoise";
+import SaladeMelonEpicee from "./pages/articles/SaladeMelonEpicee";
+import TartinesTomatesProsciutto from "./pages/articles/TartinesTomatesProsciutto";
+import SandwichBanhMi from "./pages/articles/SandwichBanhMi";
+import RamenFroid from "./pages/articles/RamenFroid";
+import BarTacosExpress from "./pages/articles/BarTacosExpress";
+import SaladeFattoucheVege from "./pages/articles/SaladeFattoucheVege";
+import SaladeConcombresEcrases from "./pages/articles/SaladeConcombresEcrases";
+import GuedillesVegetaliennes from "./pages/articles/GuedillesVegetaliennes";
+import SaladeRoquetteAvocatBleuets from "./pages/articles/SaladeRoquetteAvocatBleuets";
+import SandwichArcEnCielTofu from "./pages/articles/SandwichArcEnCielTofu";
+import SandwichMuffuletta from "./pages/articles/SandwichMuffuletta";
+import TofuSoyeuxTomatesBasilic from "./pages/articles/TofuSoyeuxTomatesBasilic";
+import LimonadeRhubarbe from "./pages/articles/LimonadeRhubarbe";
+import BoissonPechesGingembre from "./pages/articles/BoissonPechesGingembre";
+
 import { AuthProvider } from "./contexts/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AdminLogin from "./pages/AdminLogin";
@@ -66,7 +88,7 @@ const App = () => (
               <Route path="/boutique" element={<Boutique />} />
               <Route path="/recipes/:recipeId" element={<RecipePage />} />
               
-              {/* Routes pour les articles */}
+              {/* Routes pour les articles existants */}
               <Route path="/articles/lasagnes-courgettes" element={<LasagnesCourgettes />} />
               <Route path="/articles/salade-grecque" element={<SaladeGrecque />} />
               <Route path="/articles/galettes-vegetariennes" element={<GalettesVegetariennes />} />
@@ -77,6 +99,26 @@ const App = () => (
               <Route path="/articles/salade-pommes-de-terre" element={<SaladePommesDeTerre />} />
               <Route path="/articles/oeufs-mollets" element={<OeufsMollets />} />
               <Route path="/articles/sundae-maison" element={<SundaeMaison />} />
+              
+              {/* Routes pour les nouveaux articles */}
+              <Route path="/articles/salade-pates-bruschetta" element={<SaladePatesBruschetta />} />
+              <Route path="/articles/guedilles-crabe" element={<GuedillesCrabe />} />
+              <Route path="/articles/salade-antipasto" element={<SaladeAntipasto />} />
+              <Route path="/articles/salade-nicoise" element={<SaladeNicoise />} />
+              <Route path="/articles/salade-melon-epicee" element={<SaladeMelonEpicee />} />
+              <Route path="/articles/tartines-tomates-prosciutto" element={<TartinesTomatesProsciutto />} />
+              <Route path="/articles/sandwich-banh-mi" element={<SandwichBanhMi />} />
+              <Route path="/articles/ramen-froid" element={<RamenFroid />} />
+              <Route path="/articles/bar-tacos-express" element={<BarTacosExpress />} />
+              <Route path="/articles/salade-fattouche-vege" element={<SaladeFattoucheVege />} />
+              <Route path="/articles/salade-concombres-ecrases" element={<SaladeConcombresEcrases />} />
+              <Route path="/articles/guedilles-vegetaliennes" element={<GuedillesVegetaliennes />} />
+              <Route path="/articles/salade-roquette-avocat-bleuets" element={<SaladeRoquetteAvocatBleuets />} />
+              <Route path="/articles/sandwich-arc-en-ciel-tofu" element={<SandwichArcEnCielTofu />} />
+              <Route path="/articles/sandwich-muffuletta" element={<SandwichMuffuletta />} />
+              <Route path="/articles/tofu-soyeux-tomates-basilic" element={<TofuSoyeuxTomatesBasilic />} />
+              <Route path="/articles/limonade-rhubarbe" element={<LimonadeRhubarbe />} />
+              <Route path="/articles/boisson-peches-gingembre" element={<BoissonPechesGingembre />} />
               
               {/* Routes d'administration */}
               <Route path="/admin/login" element={<AdminLogin />} />
