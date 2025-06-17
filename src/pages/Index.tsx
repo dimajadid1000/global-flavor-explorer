@@ -23,154 +23,175 @@ const QUICK_FILTERS = [
   { label: "Économique", type: "tag", value: "Économique" },
 ];
 
-// Tous les articles avec les bonnes images et liens
+// Tous les articles avec les bonnes images et liens - NOUVEAUX ARTICLES EN PREMIER
 const ALL_ARTICLES = [
   {
     title: "Salade de pâtes à la bruschetta",
     description: "Une salade-repas à 5 ingrédients, simple et savoureuse",
     image: "/lovable-uploads/8d6ad858-5b8c-4165-b345-bece66e7d9a8.png",
     link: "/articles/salade-pates-bruschetta",
-    time: "20 min"
+    time: "20 min",
+    category: "Plats principaux"
   },
   {
     title: "Guédilles au crabe des neiges",
     description: "Des guédilles fraîches avec légumes croquants et mayonnaise citronnée",
     image: "/lovable-uploads/9e7dd654-2b37-4e56-97ec-baebde0664f6.png",
     link: "/articles/guedilles-crabe",
-    time: "30 min"
+    time: "30 min",
+    category: "Plats principaux"
   },
   {
     title: "Salade antipasto",
     description: "Une salade colorée aux tortellinis, parfaite pour l'été",
     image: "/lovable-uploads/7b92cadc-9e75-419c-a907-ea4109852971.png",
     link: "/articles/salade-antipasto",
-    time: "25 min"
+    time: "25 min",
+    category: "Salades"
   },
   {
     title: "Salade niçoise",
     description: "Le grand classique français avec vinaigrette parfumée",
     image: "/lovable-uploads/4f508374-776e-49cd-b5b2-4747ee89831b.png",
     link: "/articles/salade-nicoise",
-    time: "45 min"
+    time: "45 min",
+    category: "Salades"
   },
   {
     title: "Salade de melon d'eau épicée",
     description: "Rafraîchissante et surprenante avec feta et épices",
     image: "/lovable-uploads/041d3ac5-0ef7-4973-9e16-921d3802f78d.png",
     link: "/articles/salade-melon-epicee",
-    time: "10 min"
+    time: "10 min",
+    category: "Salades"
   },
   {
     title: "Tartines aux tomates et prosciutto",
     description: "Des tartines méditerranéennes aux saveurs authentiques",
     image: "/lovable-uploads/3d08a949-701f-4bad-b0b6-52b946fcf28b.png",
     link: "/articles/tartines-tomates-prosciutto",
-    time: "20 min"
+    time: "20 min",
+    category: "Entrées"
   },
   {
     title: "Sandwichs bánh mì",
     description: "Authentiques sandwichs vietnamiens avec poulet effiloché",
     image: "/lovable-uploads/6b4fa233-9631-43c4-b999-7b1680a1e024.png",
     link: "/articles/sandwich-banh-mi",
-    time: "45 min"
+    time: "45 min",
+    category: "Sandwichs"
   },
   {
     title: "Ramen froid",
     description: "Un ramen rafraîchissant parfait pour l'été",
     image: "/lovable-uploads/868a4d4c-e1cd-4892-9df9-b5f38f117d80.png",
     link: "/articles/ramen-froid",
-    time: "30 min"
+    time: "30 min",
+    category: "Soupes"
   },
   {
     title: "Bar à tacos express",
     description: "Des tacos rapides et savoureux pour toute la famille",
     image: "/lovable-uploads/b657a537-6e2f-48f9-bbb9-483761224225.png",
     link: "/articles/bar-tacos-express",
-    time: "25 min"
+    time: "25 min",
+    category: "Plats principaux"
   },
   {
     title: "Salade fattouche végé",
     description: "Salade méditerranéenne avec tofu mariné au zaatar",
     image: "/lovable-uploads/5113a2f2-d43d-40c0-a73a-13c1d73abb48.png",
     link: "/articles/salade-fattouche-vege",
-    time: "35 min"
+    time: "35 min",
+    category: "Salades"
   },
   {
     title: "Salade de concombres écrasés",
     description: "Salade asiatique rafraîchissante et épicée",
     image: "/lovable-uploads/041d3ac5-0ef7-4973-9e16-921d3802f78d.png",
     link: "/articles/salade-concombres-ecrases",
-    time: "15 min"
+    time: "15 min",
+    category: "Salades"
   },
   {
     title: "Guédilles végétaliennes",
     description: "Alternative végétalienne savoureuse au classique",
     image: "/lovable-uploads/9e7dd654-2b37-4e56-97ec-baebde0664f6.png",
     link: "/articles/guedilles-vegetaliennes",
-    time: "20 min"
+    time: "20 min",
+    category: "Sandwichs"
   },
   {
     title: "Salade roquette, avocat et bleuets",
     description: "Salade raffinée avec vinaigrette à la lavande",
     image: "/lovable-uploads/4306d701-cc79-4903-8214-b171651fed22.png",
     link: "/articles/salade-roquette-avocat-bleuets",
-    time: "15 min"
+    time: "15 min",
+    category: "Salades"
   },
   {
     title: "Sandwichs arc-en-ciel au tofu",
     description: "Sandwichs colorés et nutritifs aux légumes variés",
     image: "/lovable-uploads/7b92cadc-9e75-419c-a907-ea4109852971.png",
     link: "/articles/sandwich-arc-en-ciel-tofu",
-    time: "45 min"
+    time: "45 min",
+    category: "Sandwichs"
   },
   {
     title: "Sandwich muffuletta",
     description: "Le célèbre sandwich de La Nouvelle-Orléans",
     image: "/lovable-uploads/4f508374-776e-49cd-b5b2-4747ee89831b.png",
     link: "/articles/sandwich-muffuletta",
-    time: "6 heures"
+    time: "6 heures",
+    category: "Sandwichs"
   },
   {
     title: "Tofu soyeux aux tomates et basilic",
     description: "Plat asiatique frais avec sauce légèrement épicée",
     image: "/lovable-uploads/868a4d4c-e1cd-4892-9df9-b5f38f117d80.png",
     link: "/articles/tofu-soyeux-tomates-basilic",
-    time: "10 min"
+    time: "10 min",
+    category: "Accompagnements"
   },
   {
     title: "Limonade à la rhubarbe",
     description: "Boisson rafraîchissante et originale pour l'été",
     image: "/lovable-uploads/6b4fa233-9631-43c4-b999-7b1680a1e024.png",
     link: "/articles/limonade-rhubarbe",
-    time: "25 min"
+    time: "25 min",
+    category: "Boissons"
   },
   {
     title: "Boisson aux pêches et au gingembre",
     description: "Boisson estivale délicieuse aux pêches juteuses",
     image: "/lovable-uploads/5113a2f2-d43d-40c0-a73a-13c1d73abb48.png",
     link: "/articles/boisson-peches-gingembre",
-    time: "30 min"
+    time: "30 min",
+    category: "Boissons"
   },
   {
     title: "Lasagnes aux Courgettes et Feta",
     description: "Une version estivale et légère des lasagnes traditionnelles",
     image: "/lovable-uploads/8d6ad858-5b8c-4165-b345-bece66e7d9a8.png",
     link: "/articles/lasagnes-courgettes",
-    time: "45 min"
+    time: "45 min",
+    category: "Plats principaux"
   },
   {
     title: "Salade Grecque en Cubes",
     description: "Beau comme un tableau ! Une présentation originale de la salade grecque",
     image: "/lovable-uploads/9e7dd654-2b37-4e56-97ec-baebde0664f6.png",
     link: "/articles/salade-grecque",
-    time: "15 min"
+    time: "15 min",
+    category: "Salades"
   },
   {
     title: "Galettes Végétariennes",
     description: "Un plat d'été 100% barbecue aux pois chiches et légumes grillés",
     image: "/lovable-uploads/7b92cadc-9e75-419c-a907-ea4109852971.png",
     link: "/articles/galettes-vegetariennes",
-    time: "50 min"
+    time: "50 min",
+    category: "Plats principaux"
   }
 ];
 
@@ -258,16 +279,21 @@ export default function Index() {
         </nav>
       </section>
 
-      {/* Section Derniers Articles avec Carrousel */}
+      {/* Section Derniers Articles avec Carrousel - MISE À JOUR */}
       <section className="w-full max-w-7xl mx-auto px-4 mb-12">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-primary mb-2 flex items-center justify-center gap-2">
             <BookOpen className="w-8 h-8" />
-            Derniers Articles
+            Nos Derniers Articles
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            Découvrez nos dernières recettes et créations culinaires
+            Découvrez toutes nos recettes et créations culinaires
           </p>
+          <div className="mt-4">
+            <Badge variant="secondary" className="text-sm">
+              {ALL_ARTICLES.length} articles disponibles
+            </Badge>
+          </div>
         </div>
         
         <Carousel
@@ -277,7 +303,7 @@ export default function Index() {
           }}
           plugins={[
             Autoplay({
-              delay: 4000,
+              delay: 3000,
             }),
           ]}
           className="w-full"
@@ -297,16 +323,21 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <Badge variant="outline" className="text-xs">
+                        {article.category}
+                      </Badge>
+                      <Badge variant="secondary" className="text-xs">
+                        {article.time}
+                      </Badge>
+                    </div>
                     <h3 className="font-bold text-sm mb-2 line-clamp-2 group-hover:text-primary transition-colors">
                       {article.title}
                     </h3>
                     <p className="text-xs text-gray-600 dark:text-gray-400 mb-2 line-clamp-2">
                       {article.description}
                     </p>
-                    <div className="flex items-center justify-between">
-                      <Badge variant="secondary" className="text-xs">
-                        {article.time}
-                      </Badge>
+                    <div className="flex items-center justify-end">
                       <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
                   </div>
