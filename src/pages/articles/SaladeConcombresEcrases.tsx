@@ -6,7 +6,7 @@ export default function SaladeConcombresEcrases() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <img 
-          src="/lovable-uploads/e2b28d1c-8ceb-4890-8199-c02e574c57f8.png"
+          src="/lovable-uploads/854d7eab-c34b-4ec0-93d9-dc10c38471f2.png"
           alt="Salade de Concombres Écrasés"
           className="w-full h-64 object-cover rounded-lg mb-6"
         />

@@ -1,25 +1,25 @@
 
 import React from "react";
 
-export default function GuedillesVegetaliennes() {
+export default function SandwichMuffuletta() {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <img 
-          src="/lovable-uploads/76bb2dc9-23a6-41c8-a413-642aa935a33d.png"
-          alt="Guédilles Végétaliennes"
+          src="/lovable-uploads/6467ea51-304e-48a2-b63a-238760f0861b.png"
+          alt="Sandwich Muffuletta"
           className="w-full h-64 object-cover rounded-lg mb-6"
         />
         
-        <h1 className="text-4xl font-bold mb-4">Guédilles Végétaliennes</h1>
+        <h1 className="text-4xl font-bold mb-4">Sandwich Muffuletta</h1>
         
         <div className="flex gap-4 mb-6">
-          <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">20 min</span>
+          <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">30 min</span>
           <span className="bg-secondary/10 text-secondary-foreground px-3 py-1 rounded-full text-sm">4 portions</span>
         </div>
         
         <p className="text-lg text-muted-foreground mb-8">
-          Des guédilles savoureuses et végétaliennes, parfaites pour un repas léger et nutritif. Une alternative délicieuse aux versions traditionnelles.
+          Le sandwich emblématique de la Nouvelle-Orléans, garni de charcuteries italiennes et d'une salade d'olives traditionnelle sur pain muffuletta.
         </p>
         
         <div className="grid md:grid-cols-2 gap-8">
@@ -28,23 +28,27 @@ export default function GuedillesVegetaliennes() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                4 pains à hot-dog végétaliens
+                1 pain muffuletta rond
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                200g de protéines végétales texturées
+                Jambon italien tranché
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                Mayonnaise végétalienne
+                Salami italien
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                Laitue, tomates, oignons
+                Mortadelle
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                Épices au choix
+                Fromage provolone
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-primary rounded-full"></span>
+                Salade d'olives mélangées
               </li>
             </ul>
           </div>
@@ -54,19 +58,19 @@ export default function GuedillesVegetaliennes() {
             <ol className="space-y-3">
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium">1</span>
-                <span>Réhydratez les protéines végétales avec du bouillon chaud.</span>
+                <span>Coupez le pain en deux horizontalement.</span>
               </li>
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium">2</span>
-                <span>Assaisonnez et faites revenir dans une poêle.</span>
+                <span>Étalez généreusement la salade d'olives.</span>
               </li>
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium">3</span>
-                <span>Réchauffez les pains et garnissez de légumes frais.</span>
+                <span>Superposez les charcuteries et le fromage.</span>
               </li>
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium">4</span>
-                <span>Ajoutez la mayonnaise végétalienne et servez.</span>
+                <span>Refermez et pressez 30 minutes avant de servir.</span>
               </li>
             </ol>
           </div>

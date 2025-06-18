@@ -1,17 +1,17 @@
 
 import React from "react";
 
-export default function GuedillesVegetaliennes() {
+export default function TofuSoyeuxTomatesBasilic() {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <img 
-          src="/lovable-uploads/76bb2dc9-23a6-41c8-a413-642aa935a33d.png"
-          alt="Guédilles Végétaliennes"
+          src="/lovable-uploads/e6dbf3dc-0036-4e52-a2de-ff0dab7b2504.png"
+          alt="Tofu Soyeux aux Tomates et Basilic"
           className="w-full h-64 object-cover rounded-lg mb-6"
         />
         
-        <h1 className="text-4xl font-bold mb-4">Guédilles Végétaliennes</h1>
+        <h1 className="text-4xl font-bold mb-4">Tofu Soyeux aux Tomates et Basilic</h1>
         
         <div className="flex gap-4 mb-6">
           <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">20 min</span>
@@ -19,7 +19,7 @@ export default function GuedillesVegetaliennes() {
         </div>
         
         <p className="text-lg text-muted-foreground mb-8">
-          Des guédilles savoureuses et végétaliennes, parfaites pour un repas léger et nutritif. Une alternative délicieuse aux versions traditionnelles.
+          Un plat délicieux et léger de tofu soyeux accompagné de tomates fraîches et de basilic parfumé, idéal pour un repas sain et savoureux.
         </p>
         
         <div className="grid md:grid-cols-2 gap-8">
@@ -28,23 +28,27 @@ export default function GuedillesVegetaliennes() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                4 pains à hot-dog végétaliens
+                400g de tofu soyeux
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                200g de protéines végétales texturées
+                500g de tomates cerises
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                Mayonnaise végétalienne
+                Basilic frais
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                Laitue, tomates, oignons
+                3 cuillères à soupe d'huile d'olive
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                Épices au choix
+                2 gousses d'ail
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-primary rounded-full"></span>
+                Sel et poivre
               </li>
             </ul>
           </div>
@@ -54,19 +58,19 @@ export default function GuedillesVegetaliennes() {
             <ol className="space-y-3">
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium">1</span>
-                <span>Réhydratez les protéines végétales avec du bouillon chaud.</span>
+                <span>Coupez délicatement le tofu en cubes.</span>
               </li>
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium">2</span>
-                <span>Assaisonnez et faites revenir dans une poêle.</span>
+                <span>Faites revenir l'ail dans l'huile d'olive.</span>
               </li>
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium">3</span>
-                <span>Réchauffez les pains et garnissez de légumes frais.</span>
+                <span>Ajoutez les tomates et faites cuire 10 minutes.</span>
               </li>
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium">4</span>
-                <span>Ajoutez la mayonnaise végétalienne et servez.</span>
+                <span>Incorporez délicatement le tofu et le basilic.</span>
               </li>
             </ol>
           </div>

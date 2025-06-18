@@ -9,6 +9,12 @@ import NotFound from "./pages/NotFound";
 import RecettesFrance from "./pages/RecettesFrance";
 import SaladeConcombresEcrases from "./pages/articles/SaladeConcombresEcrases";
 import GuedillesVegetaliennes from "./pages/articles/GuedillesVegetaliennes";
+import SaladeRoquetteAvocatBleuets from "./pages/articles/SaladeRoquetteAvocatBleuets";
+import SandwichArcEnCielTofu from "./pages/articles/SandwichArcEnCielTofu";
+import SandwichMuffuletta from "./pages/articles/SandwichMuffuletta";
+import TofuSoyeuxTomatesBasilic from "./pages/articles/TofuSoyeuxTomatesBasilic";
+import LimonadeRhubarbe from "./pages/articles/LimonadeRhubarbe";
+import BoissonPechesGingembre from "./pages/articles/BoissonPechesGingembre";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +31,12 @@ const App = () => (
           {/* Articles individuels - gardant les liens originaux */}
           <Route path="/articles/salade-concombres-ecrases" element={<SaladeConcombresEcrases />} />
           <Route path="/articles/guedilles-vegetaliennes" element={<GuedillesVegetaliennes />} />
+          <Route path="/articles/salade-roquette-avocat-bleuets" element={<SaladeRoquetteAvocatBleuets />} />
+          <Route path="/articles/sandwich-arc-en-ciel-tofu" element={<SandwichArcEnCielTofu />} />
+          <Route path="/articles/sandwich-muffuletta" element={<SandwichMuffuletta />} />
+          <Route path="/articles/tofu-soyeux-tomates-basilic" element={<TofuSoyeuxTomatesBasilic />} />
+          <Route path="/articles/limonade-rhubarbe" element={<LimonadeRhubarbe />} />
+          <Route path="/articles/boisson-peches-gingembre" element={<BoissonPechesGingembre />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

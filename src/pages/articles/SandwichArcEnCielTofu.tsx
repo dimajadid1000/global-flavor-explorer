@@ -1,25 +1,25 @@
 
 import React from "react";
 
-export default function GuedillesVegetaliennes() {
+export default function SandwichArcEnCielTofu() {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <img 
-          src="/lovable-uploads/76bb2dc9-23a6-41c8-a413-642aa935a33d.png"
-          alt="Guédilles Végétaliennes"
+          src="/lovable-uploads/77db422a-a0e4-4e63-99d6-7108132af098.png"
+          alt="Sandwich Arc-en-ciel au Tofu"
           className="w-full h-64 object-cover rounded-lg mb-6"
         />
         
-        <h1 className="text-4xl font-bold mb-4">Guédilles Végétaliennes</h1>
+        <h1 className="text-4xl font-bold mb-4">Sandwich Arc-en-ciel au Tofu</h1>
         
         <div className="flex gap-4 mb-6">
-          <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">20 min</span>
-          <span className="bg-secondary/10 text-secondary-foreground px-3 py-1 rounded-full text-sm">4 portions</span>
+          <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">25 min</span>
+          <span className="bg-secondary/10 text-secondary-foreground px-3 py-1 rounded-full text-sm">2 portions</span>
         </div>
         
         <p className="text-lg text-muted-foreground mb-8">
-          Des guédilles savoureuses et végétaliennes, parfaites pour un repas léger et nutritif. Une alternative délicieuse aux versions traditionnelles.
+          Un sandwich coloré et nutritif au tofu mariné, garni de légumes frais multicolores pour un repas équilibré et savoureux.
         </p>
         
         <div className="grid md:grid-cols-2 gap-8">
@@ -28,23 +28,27 @@ export default function GuedillesVegetaliennes() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                4 pains à hot-dog végétaliens
+                200g de tofu ferme
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                200g de protéines végétales texturées
+                4 tranches de pain complet
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                Mayonnaise végétalienne
+                Chou rouge râpé
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                Laitue, tomates, oignons
+                Carotte râpée
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
-                Épices au choix
+                Avocat en tranches
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-primary rounded-full"></span>
+                Épinards frais
               </li>
             </ul>
           </div>
@@ -54,19 +58,19 @@ export default function GuedillesVegetaliennes() {
             <ol className="space-y-3">
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium">1</span>
-                <span>Réhydratez les protéines végétales avec du bouillon chaud.</span>
+                <span>Marinez le tofu coupé en tranches.</span>
               </li>
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium">2</span>
-                <span>Assaisonnez et faites revenir dans une poêle.</span>
+                <span>Faites griller le tofu dans une poêle.</span>
               </li>
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium">3</span>
-                <span>Réchauffez les pains et garnissez de légumes frais.</span>
+                <span>Toastez légèrement le pain.</span>
               </li>
               <li className="flex gap-3">
                 <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-medium">4</span>
-                <span>Ajoutez la mayonnaise végétalienne et servez.</span>
+                <span>Assemblez en alternant les couleurs des légumes.</span>
               </li>
             </ol>
           </div>
