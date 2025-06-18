@@ -4,6 +4,7 @@ import { recipes, Recipe, Cuisine } from "../data/recipes";
 import RecipeCard from "../components/RecipeCard";
 import RecipeModal from "../components/RecipeModal";
 import FilterBar from "../components/FilterBar";
+import Navigation from "../components/Navigation";
 
 const ALL_CUISINES = Array.from(new Set(recipes.map(r => r.cuisine))) as Cuisine[];
 
@@ -29,6 +30,7 @@ export default function Index() {
 
   return (
     <div className="min-h-screen w-full bg-background flex flex-col">
+      <Navigation />
       <header className="w-full max-w-7xl mx-auto py-8 mb-6 px-4 flex flex-col items-center gap-2">
         <h1 className="text-4xl font-bold leading-tight mb-1">World Cuisine Recipe Explorer</h1>
         <p className="text-lg text-muted-foreground mb-2">
