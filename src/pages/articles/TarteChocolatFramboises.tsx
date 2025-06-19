@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navigation from "../../components/Navigation";
 
@@ -9,7 +8,7 @@ export default function TarteChocolatFramboises() {
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="mb-8">
           <img 
-            src="/lovable-uploads/98101daf-50b2-4cea-908c-d7d458a4fff0.png" 
+            src="/lovable-uploads/4a9522cb-242d-40a1-84c2-7cc6bfcf6d18.png" 
             alt="Tarte au chocolat et framboises de Laurent Mariotte"
             className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg mb-6"
           />
