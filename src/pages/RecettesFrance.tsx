@@ -10,6 +10,78 @@ const frenchRecipes = recipes.filter(recipe => recipe.cuisine === "French");
 // Articles supplémentaires français
 const additionalFrenchArticles = [
   {
+    id: 'salade-melon-burrata-pesto',
+    title: 'Salade melon et burrata farcie au pesto',
+    image: '/lovable-uploads/62a70f81-e27b-48a8-9271-2e012de4457c.png',
+    description: 'Un plat frais, élégant et ultra-gourmand, parfait pour l\'été.',
+    prepTime: '20 min',
+    link: '/articles/salade-melon-burrata-pesto'
+  },
+  {
+    id: 'tarte-chocolat-framboises',
+    title: 'Tarte au chocolat et framboises de Laurent Mariotte',
+    image: '/lovable-uploads/4a9522cb-242d-40a1-84c2-7cc6bfcf6d18.png',
+    description: 'Un dessert fondant, fruité et absolument irrésistible pour l\'été.',
+    prepTime: '30 min + 1h de repos',
+    link: '/articles/tarte-chocolat-framboises'
+  },
+  {
+    id: 'sauce-legere-concombres',
+    title: 'Sauce légère pour sublimer vos concombres',
+    image: '/lovable-uploads/1c829638-582e-4adc-adfe-bcba6e5e74af.png',
+    description: 'Une alternative plus légère à la traditionnelle crème fraîche.',
+    prepTime: '5 min',
+    link: '/articles/sauce-legere-concombres'
+  },
+  {
+    id: 'chorizo-legumes-ete',
+    title: 'Chorizo rôti aux légumes d\'été',
+    image: '/lovable-uploads/84c0b43a-d32f-4d47-887b-de3a59f1ac14.png',
+    description: 'Une recette express et savoureuse, parfaite pour un repas convivial.',
+    prepTime: '15 min',
+    link: '/articles/chorizo-legumes-ete'
+  },
+  {
+    id: 'salade-quinoa-legumes-feta',
+    title: 'Salade de quinoa aux légumes d\'été grillés et féta',
+    image: '/lovable-uploads/31569dfc-59d4-4e0a-94ba-1a4b2beaef2f.png',
+    description: 'Une salade tiède ou froide, pleine de couleurs et de saveurs méditerranéennes.',
+    prepTime: '15 min',
+    link: '/articles/salade-quinoa-legumes-feta'
+  },
+  {
+    id: 'brochettes-crevettes-grillees',
+    title: 'Brochettes de crevettes grillées',
+    image: '/lovable-uploads/78af5888-ace3-4df7-990c-166403805999.png',
+    description: 'Saines, rapides et délicieusement parfumées au citron et au paprika.',
+    prepTime: '10 min',
+    link: '/articles/brochettes-crevettes-grillees'
+  },
+  {
+    id: 'gratin-legumes-ricotta',
+    title: 'Gratin de légumes grillés à la ricotta',
+    image: '/lovable-uploads/7161a781-3d22-473c-97b5-e47b286f6dbc.png',
+    description: 'Un plat léger, coloré et fondant, parfait pour accompagner vos repas d\'été.',
+    prepTime: '15 min',
+    link: '/articles/gratin-legumes-ricotta'
+  },
+  {
+    id: 'brochettes-poulet-miel',
+    title: 'Brochettes de poulet au miel et épices',
+    image: '/lovable-uploads/98101daf-50b2-4cea-908c-d7d458a4fff0.png',
+    description: 'Des brochettes savoureuses et parfumées, idéales pour vos barbecues.',
+    prepTime: '20 min',
+    link: '/articles/brochettes-poulet-miel'
+  },
+  {
+    id: 'brochettes-fruits-miel-cannelle',
+    title: 'Brochettes de fruits grillés au miel et à la cannelle',
+    image: '/lovable-uploads/cbdbcab3-f35e-4085-850a-fdf3d108667f.png',
+    description: 'Une touche sucrée, légère et fruitée, parfaite pour finir un repas d\'été.',
+    prepTime: '10 min',
+    link: '/articles/brochettes-fruits-miel-cannelle'
+  },
+  {
     id: 'salade-concombres-ecrases',
     title: 'Salade de Concombres Écrasés',
     image: '/lovable-uploads/e2b28d1c-8ceb-4890-8199-c02e574c57f8.png',
