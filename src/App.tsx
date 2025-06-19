@@ -24,6 +24,7 @@ import BrochettesCrevettesGrillees from "./pages/articles/BrochettesCrevettesGri
 import GratinLegumesRicotta from "./pages/articles/GratinLegumesRicotta";
 import BrochettesPouletMiel from "./pages/articles/BrochettesPouletMiel";
 import BrochettesFruitsMielCannelle from "./pages/articles/BrochettesFruitsMielCannelle";
+import RavioliMorillesTruffe from "./pages/articles/RavioliMorillesTruffe";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/articles/gratin-legumes-ricotta" element={<GratinLegumesRicotta />} />
           <Route path="/articles/brochettes-poulet-miel" element={<BrochettesPouletMiel />} />
           <Route path="/articles/brochettes-fruits-miel-cannelle" element={<BrochettesFruitsMielCannelle />} />
+          <Route path="/articles/ravioli-morilles-truffe" element={<RavioliMorillesTruffe />} />
           {/* Articles individuels - gardant les liens originaux */}
           <Route path="/articles/salade-concombres-ecrases" element={<SaladeConcombresEcrases />} />
           <Route path="/articles/guedilles-vegetaliennes" element={<GuedillesVegetaliennes />} />

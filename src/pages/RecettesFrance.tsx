@@ -82,6 +82,14 @@ const additionalFrenchArticles = [
     link: '/articles/brochettes-fruits-miel-cannelle'
   },
   {
+    id: 'ravioli-morilles-truffe',
+    title: 'Ravioli aux morilles et à la truffe d\'été',
+    image: '/lovable-uploads/a7301121-69d8-4430-b49f-3c1bebed1e3f.png',
+    description: 'Un plat raffiné, parfumé et délicat, parfait pour un dîner élégant.',
+    prepTime: '1h15',
+    link: '/articles/ravioli-morilles-truffe'
+  },
+  {
     id: 'salade-concombres-ecrases',
     title: 'Salade de Concombres Écrasés',
     image: '/lovable-uploads/e2b28d1c-8ceb-4890-8199-c02e574c57f8.png',
