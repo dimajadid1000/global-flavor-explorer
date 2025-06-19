@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: dimajadid1000/global-flavor-explorer
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "recipes"
+    label: "Recipes"
+    folder: "src/content/recipes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
